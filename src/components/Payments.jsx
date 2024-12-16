@@ -4,7 +4,7 @@ const Payments = ({ payments, setPayments }) => {
   const [newPayment, setNewPayment] = useState({ amount: '', status: 'Unpaid' });
 
   const notifyPaymentsUpdate = () => {
-    // Dispatch custom event to notify of payments update
+   
     window.dispatchEvent(new Event('paymentsUpdated'));
   };
 
@@ -54,7 +54,7 @@ const Payments = ({ payments, setPayments }) => {
     });
   };
 
-  // Add payment form JSX at the bottom of the component
+ 
   return (
     <div className="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition-shadow">
       <div className="flex justify-between items-center mb-6">
